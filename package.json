@@ -1,0 +1,16 @@
+{
+  "name": "graphql-cli",
+  "version": "0.0.0",
+  "description": "Command line utilities for GraphQL",
+  "bin": {
+    "graphql": "./cli.js"
+  },
+  "dependencies": {
+    "babel-register": "^6.5.1",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "graphql": "^0.4.17"
+  }
+}

@@ -1,0 +1,125 @@
+env:
+  browser: true
+  node: true
+  es6: true
+  mocha: true
+
+ecmaFeatures:
+  arrowFunctions: true
+  binaryLiterals: true
+  blockBindings: true
+  classes: true
+  defaultParams: true
+  destructuring: true
+  forOf: true
+  generators: true
+  modules: true
+  objectLiteralComputedProperties: true
+  objectLiteralDuplicateProperties: true
+  objectLiteralShorthandMethods: true
+  objectLiteralShorthandProperties: true
+  octalLiterals: true
+  regexUFlag: true
+  regexYFlag: true
+  restParams: true
+  spread: true
+  superInFunctions: true
+  templateStrings: true
+  unicodeCodePointEscapes: true
+  globalReturn: true
+  jsx: true
+  experimentalObjectRestSpread: true
+
+plugins:
+  - react # for https://github.com/eslint/eslint/issues/1534
+
+rules:
+  # Possible Errors
+  no-cond-assign: 1
+  no-control-regex: 1
+  no-debugger: 1
+  no-dupe-args: 1
+  no-dupe-keys: 1
+  no-duplicate-case: 1
+  no-empty-character-class: 1
+  no-empty: 1
+  no-ex-assign: 1
+  no-extra-boolean-cast: 1
+  no-extra-semi: 1
+  no-func-assign: 1
+  no-inner-declarations: 1
+  no-sparse-arrays: 1
+  no-unexpected-multiline: 1
+  no-unreachable: 1
+  use-isnan: 1
+  valid-typeof: 1
+
+  # Best Practices
+  eqeqeq: 1
+  no-caller: 1
+  no-case-declarations: 1
+  no-empty-label: 1
+  no-empty-pattern: 1
+  no-fallthrough: 1
+  no-implied-eval: 1
+  no-labels: 1
+  no-lone-blocks: 1
+  no-multi-spaces: 1
+  no-native-reassign: 1
+  no-octal-escape: 1
+  no-octal: 1
+  no-redeclare: 1
+  no-return-assign: 1
+  no-self-compare: 1
+  no-sequences: 1
+  no-throw-literal: 1
+  no-useless-call: 1
+  no-useless-concat: 1
+  no-void: 1
+  no-with: 1
+  radix: 1
+
+  # Strict Mode
+  strict: 0 # babel add global use strict always
+
+  # Variables
+  no-shadow-restricted-names: 1
+  no-undef-init: 1
+  no-undef: 1
+  no-undefined: 1
+  no-unused-vars: 1
+  no-use-before-define: 1
+
+  # Stylistic Issues
+  comma-spacing: [1, { before: false, after: true }]
+  eol-last: 1
+  indent: [1, 2]
+  key-spacing: [1, { beforeColon: false, afterColon: true, mode: "minimum" }]
+  linebreak-style: [1, "unix"]
+  new-parens: 1
+  no-spaced-func: 1
+  no-trailing-spaces: 1
+  no-unneeded-ternary: 1
+  semi-spacing: 1
+  semi: 1
+  space-after-keywords: 1
+  space-before-blocks: 1
+  space-before-function-paren: [1, "never"]
+  space-before-keywords: 1
+  space-in-parens: [1, "never"]
+  space-return-throw-case: 1
+  space-unary-ops: 1
+
+  # ECMAScript 6
+  constructor-super: 1
+  no-arrow-condition: 1
+  no-class-assign: 1
+  no-const-assign: 1
+  no-dupe-class-members: 1
+  no-this-before-super: 1
+  no-var: 0
+  prefer-arrow-callback: 0
+  prefer-spread: 1
+  prefer-template: 1
+
+# vim:set ft=yaml:
